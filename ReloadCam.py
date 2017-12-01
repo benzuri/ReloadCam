@@ -50,7 +50,7 @@
 #-------------------------
 
 cccamBin = "/usr/bin/CCcam_230" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
-cccamPath = "/etc/CCcam.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamPath = "card_server.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
 
 #Cambia esta ruta SOLO si vas a ejecutar el script en windows. Si lo vas a poner en el vu+ no hace falta que la toques
 cccamPathWindows = "C:\Users\gavaz\Desktop\CCcam.cfg"  
@@ -89,7 +89,7 @@ def GetCustomClines(): #No borres esta linea!
 
 import os.path
 
-sourceUrl = "https://raw.githubusercontent.com/DaggerES/ReloadCam/master/"
+sourceUrl = "https://raw.githubusercontent.com/jograben/ReloadCam/master/"
 
 #region Refreshing methods
 
