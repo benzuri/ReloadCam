@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import ReloadCam
+
 def ReloadCamUndro():
    # Read in the file
    with open(cccamPath, 'r') as file :
