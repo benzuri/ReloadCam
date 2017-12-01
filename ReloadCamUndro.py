@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
-
-#ReloadCamUndro creado por Zurder
+# -*- coding: utf-8 -*-
 
 def ReloadCamUndro():
    # Read in the file
@@ -22,7 +20,9 @@ def ReloadCamUndro():
 
    import time
    # Reinicio de Spring.apk (al salir de qpython cargará de nuevo listas, canales, ...)
-   os.system("adb shell am force-stop com.dvb.spring.home")
+   #os.system("adb shell am force-stop com.dvb.spring.home")
+   # Se copia el archivo al sistema
+   os.system("adb push " + ReloadCam.cccamPath + " /data/data/com.dvb.spring.home/app_tmp/card_server.cfg")
    
    print "Saliendo ..."
    
