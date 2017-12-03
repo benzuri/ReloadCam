@@ -28,8 +28,8 @@ def ReloadCamUndro():
    #os.system("adb shell am force-stop com.dvb.spring.home")
    # Se copia el archivo al sistema
    #os.system("adb push " + ReloadCam.cccamPath + " /data/data/com.dvb.spring.home/app_tmp/card_server.cfg")
-   #import shutil
-   #shutil.copy2(ReloadCam.cccamPath, ReloadCam.cccamBin)
+   import shutil
+   shutil.copy2(ReloadCam.cccamPath, ReloadCam.cccamBin)
    
    print "Saliendo ..."
    
