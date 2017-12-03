@@ -11,7 +11,7 @@ Ejemplo de Main.py:
 
 #----Se necesita la app Qpython para ejecutar el script
 #----Crear un nuevo proyecto en la carpeta /mnt/sdcard/com.hipipal.qpyplus/projects/NOMBRE
-#----Copia dentro main.py y ReloadCam.py
+#----Copia dentro Main.py y ReloadCam.py
 
 import sys
 import subprocess
