@@ -7,19 +7,18 @@ def GetVersion():
    return 1
 
 def ReloadCamUndro():
-   import os
    # Read in the file
    with open(ReloadCam.cccamPath, 'r') as file :
       
       # Replace the target string 
-      lines = [( '' + line.replace('C: ', 'C:').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').rstrip('\n') + '|1|0' + "\n" ) for line in if not line.startswith('#'): open(ReloadCam.cccamPath) ]
+      lines = [( '' + line.replace('C: ', 'C:').replace('|1|0', '').replace('DEFAULT:1', '').replace('DEFAULT:0', '').replace(' ', '|').rstrip('\n') + '|1|0' + "\n" ) for line in open(ReloadCam.cccamPath) ]
 
    # Write the file out again
    with open(ReloadCam.cccamPath, 'w') as file: 
    
       #IKS
       if lines == 0:
-         file.write('DEFAULT:1\n')
+         file.write('DEFAULT:0\n')
       #CCCAM
       file.writelines(lines)
 
