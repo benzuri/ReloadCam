@@ -8,7 +8,6 @@ def GetVersion():
 
 def ReloadCamUndro():
    import os
-   
    # Read in the file
    with open(ReloadCam.cccamPath, 'r') as file :
       
