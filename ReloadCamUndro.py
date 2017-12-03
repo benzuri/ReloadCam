@@ -40,5 +40,5 @@ def ReloadCamUndro():
    print "Saliendo ..."
    
    # Salimos de qpython
-   time.sleep(1.1)
-   #os.system("adb shell am force-stop com.hipipal.qpyplus")
+   time.sleep(1.2)
+   os.system("adb shell am force-stop com.hipipal.qpyplus")
