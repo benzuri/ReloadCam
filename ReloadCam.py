@@ -49,8 +49,8 @@
 
 #-------------------------
 
-cccamBin = "/usr/bin/CCcam_230" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
-cccamPath = "/data/data/com.dvb.spring.home/app_tmp/card_server.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamBin = "/data/data/com.dvb.spring.home/app_tmp/card_server.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamPath = "/datacache/data/data/com.dvb.spring.home/files/card_server.cfg" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
 
 #Cambia esta ruta SOLO si vas a ejecutar el script en windows. Si lo vas a poner en el vu+ no hace falta que la toques
 cccamPathWindows = "C:\Users\gavaz\Desktop\CCcam.cfg"  
