@@ -13,14 +13,17 @@ def ReloadCamUndro():
    
    # Read in the file
    with open(ReloadCam.cccamPath, 'r') as file:
-      
       # Replace the target string 
       print ("\n \tcard_server.cfg: \n")
+      import ReloadCam_CCcamTester
+      
       for line in file:
-      	print ("\t" + line)
-      	myLine = '' + line.replace('C: ', 'C:').replace('N: ', 'N:').replace('01 02 03 04 05 06 07 08 09 10 11 12 13 14', '01-02-03-04-05-06-07-08-09-10-11-12-13-14').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').replace(' ', '|').replace('||', '|').rstrip('\n') + '|1|0' + "\n"
-      	if not myLine.startswith('#'):
-      		lines.append( myLine )
+      	#print ("\t" + line)
+      	if ReloadCam_CCcamTester.TestCline(line):
+      		myLine = '' + line.replace('C: ', 'C:').replace('N: ', 'N:').replace('01 02 03 04 05 06 07 08 09 10 11 12 13 14', '01-02-03-04-05-06-07-08-09-10-11-12-13-14').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').replace(' ', '|').replace('||', '|').rstrip('\n') + '|1|0' + "\n"
+
+      		if not myLine.startswith('#'):
+      			lines.append( myLine )
 
    # Write the file out again
    with open(ReloadCam.cccamPath, 'w') as file:
@@ -37,7 +40,7 @@ def ReloadCamUndro():
    import shutil
    shutil.copy2(ReloadCam.cccamPath, ReloadCam.cccamBin)
    
-   print "Saliendo ..."
+   print "\nSaliendo ..."
    
    # Salimos de qpython
    time.sleep(1.2)
