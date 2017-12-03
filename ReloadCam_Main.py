@@ -102,7 +102,7 @@ def Main(customClines, cccamPath, cccamBin):
         WriteCccamFile(clines, opts.append, opts.check, cccamPath)
         if opts.norestart is False:
             print "Restarting cam!"
-            RestartCccam(cccamBin)
+            #RestartCccam(cccamBin)
         print "Finished!!!"
     else :
         print "ERROR!!!! NO CCCAMS LOADED!"
