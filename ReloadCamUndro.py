@@ -8,18 +8,26 @@ def GetVersion():
 
 def ReloadCamUndro():
    import os
+   
+   lines = []
+   
    # Read in the file
-   with open(ReloadCam.cccamPath, 'r') as file :
+   with open(ReloadCam.cccamPath, 'r') as file:
       
       # Replace the target string 
-      lines = [( '' + line.replace('C: ', 'C:').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').rstrip('\n') + '|1|0' + "\n" ) for line in open(ReloadCam.cccamPath) ]
+      print ("\n \tcard_server.cfg: \n")
+      for line in file:
+      	print ("\t" + line)
+      	myLine = '' + line.replace('C: ', 'C:').replace('N: ', 'N:').replace('01 02 03 04 05 06 07 08 09 10 11 12 13 14', '01-02-03-04-05-06-07-08-09-10-11-12-13-14').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').replace(' ', '|').replace('||', '|').rstrip('\n') + '|1|0' + "\n"
+      	if not myLine.startswith('#'):
+      		lines.append( myLine )
 
    # Write the file out again
-   with open(ReloadCam.cccamPath, 'w') as file: 
+   with open(ReloadCam.cccamPath, 'w') as file:
    
       #IKS
-      if lines == 0:
-         file.write('DEFAULT:1\n')
+      if len(lines) == 0:
+         file.write('DEFAULT:0\n')
       #CCCAM
       file.writelines(lines)
 
@@ -33,4 +41,4 @@ def ReloadCamUndro():
    
    # Salimos de qpython
    time.sleep(1.1)
-   os.system("adb shell am force-stop com.hipipal.qpyplus")
+   #os.system("adb shell am force-stop com.hipipal.qpyplus")
