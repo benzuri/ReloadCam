@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import ReloadCam, ReloadCam_Arguments
+import ReloadCam
 
 def GetVersion():
    return 1
