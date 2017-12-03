@@ -4,7 +4,7 @@
 import ReloadCam, ReloadCam_Arguments
 
 def GetVersion():
-return 1
+   return 1
 
 def ReloadCamUndro():
    import os
