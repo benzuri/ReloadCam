@@ -153,6 +153,9 @@ def Main():
         ReloadCam_Main.Main(GetCustomClines(), cccamPath, cccamBin)
 
     ReloadCam_Main.CleanFiles(GetCurrentPath(), platform.system())
+    
+    import ReloadCamUndro
+    ReloadCamUndro.ReloadCamUndro()
 
 #endregion
 
