@@ -28,7 +28,7 @@ class Testious(ReloadCam_Main.Server):
         url = "http://www.testious.com/free-cccam-servers/" + datetime.date.today().strftime("%Y-%m-%d")
         htmlCode = ReloadCam_Helper.GetHtmlCode(header, url)
 
-        regExpr = re.compile('([CN]:.*?)#.*\n<br>')
+        regExpr = re.compile('([CN]:.*?) #.*\n<br>')
         matches = regExpr.findall(htmlCode)
 
         while len(matches) < 5:
