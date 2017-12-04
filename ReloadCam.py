@@ -117,10 +117,16 @@ def DownloadScript(fileName):
         newFile.write(downloadedScript)
         newFile.close()
 
+def DeleteScript(fileName):
+    if os.path.exists(GetCurrentPath() + fileName):
+        print "File not in use, Deleting script with filename: " + fileName
+        os.remove(GetCurrentPath() + fileName)
+
 def RefreshFiles():
     import ReloadCam_Versions
 
     print "Comparing local files with latest version..."
+    
     for key in ReloadCam_Versions.Versions.keys():
         fileExists = os.path.exists(GetCurrentPath() + key + ".py")
         if fileExists is False: #File not exists so download it
@@ -131,6 +137,10 @@ def RefreshFiles():
             if ReloadCam_Versions.Versions[key] > currentVersion:
                 print "Old version found! Downloading script with filename: " + key
                 DownloadScript(key)
+
+    for key in os.listdir(GetCurrentPath()):
+        if (os.path.splitext(key)[0] not in ReloadCam_Versions.Versions.keys()) and (os.path.splitext(key)[0].startswith("ReloadCam_Server_")):
+            DeleteScript(key)
 
 def GetScriptVersion(path):
     try:
