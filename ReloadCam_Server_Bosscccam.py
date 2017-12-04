@@ -7,7 +7,7 @@
 import ReloadCam_Main, ReloadCam_Helper
 
 def GetVersion():
-    return 2
+    return 1
 
 #Filename must start with Server, classname and argument must be the same!
 class Bosscccam(ReloadCam_Main.Server):
@@ -18,21 +18,14 @@ class Bosscccam(ReloadCam_Main.Server):
         return realUrl
 
     def GetClines(self):
-        print "Now getting Bosscccam clines!"
-        bosscccamClines = []
-        bosscccamClines.append(self.__GetBosscccamCline())
-        bosscccamClines = filter(None, bosscccamClines)
-        if len(bosscccamClines) == 0: print "No Bosscccam lines retrieved"
-        return bosscccamClines
+        print "Now getting Cccamfree clines!"
+        cccamFreeClines = []
+        cccamFreeClines.append(self.__GetCccamfreeCline())
+        return filter(None, cccamFreeClines)
 
     def __GetBosscccamCline(self):
-        import re
-
         htmlCode = ReloadCam_Helper.GetHtmlCode(None, self.GetUrl())
-        cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)        
-        if cline is None: 
-            print 'Failed to obtain cline from html code of ' + self.GetUrl(serverNo)
-            return None
-        if ReloadCam_Helper.TestCline(cline):
+        cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)
+        if cline != None and ReloadCam_Helper.TestCline(cline):
             return cline
-        return None
+    return None
