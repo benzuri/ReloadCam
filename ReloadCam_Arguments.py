@@ -9,7 +9,6 @@ def GetVersion():
 
 Arguments = [
     'Mycccam',
-    'Bosscccam',
     'Cccamfree',
     'Cccamgenerator',
     'Testious',
