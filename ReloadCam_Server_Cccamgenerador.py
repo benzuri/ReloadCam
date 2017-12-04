@@ -22,7 +22,7 @@ class Cccamgenerador(ReloadCam_Main.Server):
         cccamgeneratorClines = []
         cccamgeneratorClines.append(self.__GetCccamgeneratorCline())
         cccamgeneratorClines = filter(None, cccamgeneratorClines)
-        if len(cccamgeneratorClines) == 0: print "No Cccamgenerator lines retrieved"
+        if len(cccamgeneratorClines) == 0: print "No Cccamgenerador lines retrieved"
         return cccamgeneratorClines
 
     def __GetCccamgeneratorCline(self):
