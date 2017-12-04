@@ -19,7 +19,7 @@ def ReloadCamUndro():
       
       for line in file:
       	# Quitar formato undro
-      	line = line.replace('|1|0', '').replace('|', ' ').replace('C:', 'C: ').replace('  ', ' ')
+      	line = line.replace('|1|0', '').replace('|0|0', '').replace('|', ' ').replace('C:', 'C: ').replace('  ', ' ')
       	# Si esta operativa
       	if ReloadCam_CCcamTester.TestCline(line):
       		# Hacer formato undro
