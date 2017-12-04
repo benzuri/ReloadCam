@@ -46,43 +46,24 @@ def GetClinesByArgument(arguments, customClines):
 
     clines = []
     clines += customClines #Primero agregamos las clines custom
-    
+
     if arguments is None:
         print "No parameters supplied!"
         return clines
 
-    if len(arguments) > 1 and ('ALL' in arguments or 'ALLTF' in arguments or 'ALLT' in arguments or 'ALLF' in arguments):
-        print "Cannot use parameter ALL/ALLTF/ALLT/ALLF with other parameters"
+    if len(arguments) > 1 and ('ALL' in arguments or 'ALLT' in arguments):
+        print "Cannot use parameter ALL/ALLT with other parameters"
         return clines
     else:
         if 'ALL' in arguments:
             arguments = ReloadCam_Arguments.Arguments
             arguments.remove('ALL')
             arguments.remove('ALLT')
-            arguments.remove('ALLF')
-            arguments.remove('ALLTF')
+            arguments.remove('Testious')
         if 'ALLT' in arguments:
             arguments = ReloadCam_Arguments.Arguments
             arguments.remove('ALL')
             arguments.remove('ALLT')
-            arguments.remove('ALLF')
-            arguments.remove('ALLTF')
-            arguments.remove('Testious')
-        if 'ALLF' in arguments:
-            arguments = ReloadCam_Arguments.Arguments
-            arguments.remove('ALL')
-            arguments.remove('ALLT')
-            arguments.remove('ALLF')
-            arguments.remove('ALLTF')
-            arguments.remove('Freecline')
-        if 'ALLTF' in arguments:
-            arguments = ReloadCam_Arguments.Arguments
-            arguments.remove('ALL')
-            arguments.remove('ALLT')
-            arguments.remove('ALLF')
-            arguments.remove('ALLTF')
-            arguments.remove('Testious')
-            arguments.remove('Freecline')
 
     if len(arguments) == 0:
         print "No parameters available!"
