@@ -46,13 +46,56 @@ def GetClinesByArgument(arguments, customClines):
 
     clines = []
     clines += customClines #Primero agregamos las clines custom
+    
+    if arguments is None:
+        print "No parameters supplied!"
+        return clines
+
+    if len(arguments) > 1 and ('ALL' in arguments or 'ALLTF' in arguments or 'ALLT' in arguments or 'ALLF' in arguments):
+        print "Cannot use parameter ALL/ALLTF/ALLT/ALLF with other parameters"
+        return clines
+    else:
+        if 'ALL' in arguments:
+            arguments = ReloadCam_Arguments.Arguments
+            arguments.remove('ALL')
+            arguments.remove('ALLT')
+            arguments.remove('ALLF')
+            arguments.remove('ALLTF')
+        if 'ALLT' in arguments:
+            arguments = ReloadCam_Arguments.Arguments
+            arguments.remove('ALL')
+            arguments.remove('ALLT')
+            arguments.remove('ALLF')
+            arguments.remove('ALLTF')
+            arguments.remove('Testious')
+        if 'ALLF' in arguments:
+            arguments = ReloadCam_Arguments.Arguments
+            arguments.remove('ALL')
+            arguments.remove('ALLT')
+            arguments.remove('ALLF')
+            arguments.remove('ALLTF')
+            arguments.remove('Freecline')
+        if 'ALLTF' in arguments:
+            arguments = ReloadCam_Arguments.Arguments
+            arguments.remove('ALL')
+            arguments.remove('ALLT')
+            arguments.remove('ALLF')
+            arguments.remove('ALLTF')
+            arguments.remove('Testious')
+            arguments.remove('Freecline')
+
+    if len(arguments) == 0:
+        print "No parameters available!"
+        return clines
 
     for argument in arguments:
         moduleName = 'ReloadCam_Server_' + argument #creamos el nombre del modulo que tenemos que importar ej:ReloadCam_Myccam
-        my_module = importlib.import_module(moduleName) #Esta linea importa el modulo como si hicieramos un import <nombremodulo>
-        classInstance = getattr(my_module, argument)() #Creamos una instancia de ese modulo importado
-        clines += classInstance.GetClines() #Este metodo lo deben implementar todas las clases derivadas de "Server"
-
+        try:
+            my_module = importlib.import_module(moduleName) #Esta linea importa el modulo como si hicieramos un import <nombremodulo>
+            classInstance = getattr(my_module, argument)() #Creamos una instancia de ese modulo importado
+            clines += classInstance.GetClines() #Este metodo lo deben implementar todas las clases derivadas de "Server"
+        except Exception,e:
+            print "Error loading module: " + moduleName
     return clines
 
 def RestartCccam(path):
