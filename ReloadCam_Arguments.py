@@ -11,8 +11,6 @@ Arguments = [
     'Mycccam',
     'Satna',
     'Cccam4you',
-    'Testious',
-    'Freecline',
     'Allcam',
     'Cccamfree',
     'Cccamgenerator',
@@ -28,5 +26,10 @@ Arguments = [
     'Jokercccam',
     'Ultrahd',
     'Seduct',
-    'Raul7'
+    'Testious',
+    'Freecline',
+    'ALL', #ALL Servers,
+    'ALLTF', #ALL Servers except testious and freecline
+    'ALLT', #ALL Servers except testious
+    'ALLF', #ALL Servers except freecline
 ]
