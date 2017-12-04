@@ -11,6 +11,7 @@ Arguments = [
     'Mycccam',
     'Cccamfree',
     'Cccamgenerador',
+    'Cccamgenerator',
     'Testious',
     'ALL', #ALL Servers, except testious
     'ALLT', #ALL Servers with testious
