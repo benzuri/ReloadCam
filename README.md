@@ -20,7 +20,7 @@ import subprocess
 import ReloadCam
 
 def Main():
-   subprocess.call([sys.executable, ReloadCam.GetCurrentPath() + 'ReloadCam.py', '-s', 'Testious'])
+   subprocess.call([sys.executable, ReloadCam.GetCurrentPath() + 'ReloadCam.py', '-s', 'Testious', '-a'])
 
 if __name__ == "__main__":
    Main()
