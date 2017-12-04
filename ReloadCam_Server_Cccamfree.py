@@ -14,7 +14,7 @@ class Cccamfree(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflNrU2JRfopuk')
+        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g==')
         return realUrl
 
     def GetClines(self):
