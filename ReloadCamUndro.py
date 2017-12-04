@@ -18,8 +18,11 @@ def ReloadCamUndro():
       import ReloadCam_CCcamTester
       
       for line in file:
-      	#print ("\t" + line)
+      	# Quitar formato undro
+      	line = line.replace('C:', 'C: ').replace('|1|0', '').replace('|', ' ')
+      	# Si esta operativa
       	if ReloadCam_CCcamTester.TestCline(line):
+      		# Hacer formato undro
       		myLine = '' + line.replace('C: ', 'C:').replace('N: ', 'N:').replace('01 02 03 04 05 06 07 08 09 10 11 12 13 14', '01-02-03-04-05-06-07-08-09-10-11-12-13-14').replace('|1|0', '').replace('DEFAULT:1', '#').replace('DEFAULT:0', '#').replace(' ', '|').replace(' ', '|').replace('||', '|').rstrip('\n') + '|1|0' + "\n"
 
       		if not myLine.startswith('#'):
