@@ -9,27 +9,7 @@ def GetVersion():
 
 Arguments = [
     'Mycccam',
-    'Satna',
-    'Cccam4you',
-    'Allcam',
-    'Cccamfree',
-    'Cccamgenerator',
-    'Cccamcafard',
-    'Toopccam',
-    'Kacsat',
-    'Elaissaoui',
-    'Realtv1',
-    'Satunivers',
-    'Cccamgratis',
-    'Xhaka',
-    'Greencccamfree',
-    'Jokercccam',
-    'Ultrahd',
-    'Seduct',
     'Testious',
-    'Freecline',
-    'ALL', #ALL Servers,
-    'ALLTF', #ALL Servers except testious and freecline
-    'ALLT', #ALL Servers except testious
-    'ALLF', #ALL Servers except freecline
+    'ALL', #ALL Servers, except testious
+    'ALLT', #ALL Servers with testious
 ]
