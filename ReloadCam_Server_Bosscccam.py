@@ -18,14 +18,14 @@ class Bosscccam(ReloadCam_Main.Server):
         return realUrl
 
     def GetClines(self):
-        print "Now getting Cccamfree clines!"
-        cccamFreeClines = []
-        cccamFreeClines.append(self.__GetCccamfreeCline())
-        return filter(None, cccamFreeClines)
+        print "Now getting Bosscccam clines!"
+        bosscccamClines = []
+        bosscccamClines.append(self.__GetBosscccamCline())
+        return filter(None, bosscccamClines)
 
     def __GetBosscccamCline(self):
         htmlCode = ReloadCam_Helper.GetHtmlCode(None, self.GetUrl())
         cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)
         if cline != None and ReloadCam_Helper.TestCline(cline):
             return cline
-    return None
+        return None
