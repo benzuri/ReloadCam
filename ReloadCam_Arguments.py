@@ -10,7 +10,7 @@ def GetVersion():
 Arguments = [
     'Mycccam',
     'Cccamfree',
-    'Cccamgenerator',
+    'Cccamgenerador',
     'Testious',
     'ALL', #ALL Servers, except testious
     'ALLT', #ALL Servers with testious
