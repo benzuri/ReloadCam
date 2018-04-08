@@ -25,7 +25,7 @@ class Mycccam(ReloadCam_Main.Server):
         myccclineClines.append(self.__GetMycccamCline(3))
         myccclineClines.append(self.__GetMycccamCline(4))
         myccclineClines.append(self.__GetMycccamCline(5))
-        myccclineClines.append(self.__GetMycccamCline(6))
+        #myccclineClines.append(self.__GetMycccamCline(6))
         return filter(None, myccclineClines)
 
     def __GetMycccamCline(self, serverNo):
