@@ -8,7 +8,7 @@ Versions = {
     "ReloadCamUndro" : 1,
     "ReloadCam_CCcamTester" : 1,
     "ReloadCam_CriptoBlock" : 1,
-    "ReloadCam_Arguments" : 3,
+    "ReloadCam_Arguments" : 4,
     "ReloadCam_Helper" : 3,
     "ReloadCam_Main" : 4,
     "ReloadCam_Server_Mycccam" : 3,
