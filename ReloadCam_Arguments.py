@@ -5,13 +5,14 @@
 #Creado por Dagger
 
 def GetVersion():
-    return 3
+    return 4
 
 Arguments = [
     'Mycccam',
     'Cccamfree',
     'Cccamgenerador',
     'Cccamgenerator',
+    'Cccam4you',
     'Testious',
     'ALL', #ALL Servers, except testious
     'ALLT', #ALL Servers with testious
