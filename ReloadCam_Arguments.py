@@ -5,7 +5,7 @@
 #Creado por Dagger
 
 def GetVersion():
-    return 6
+    return 5
 
 Arguments = [
     'Mycccam',
