@@ -17,5 +17,6 @@ Versions = {
     "ReloadCam_Server_Cccamgenerador" : 1,
     "ReloadCam_Server_Cccamgenerator" : 1,
     "ReloadCam_Server_Cccam4you" : 1,
+    "ReloadCam_Server_Cccamfull" : 1,
     "ReloadCam_Server_Testious" : 1,
 }
