@@ -11,7 +11,7 @@ Versions = {
     "ReloadCam_Arguments" : 5,
     "ReloadCam_Helper" : 3,
     "ReloadCam_Main" : 4,
-    "ReloadCam_Server_Mycccam" : 3,
+    "ReloadCam_Server_Mycccam" : 4,
     "ReloadCam_Server_Cccamfree" : 1,
     "ReloadCam_Server_Cccamfree2" : 1,
     "ReloadCam_Server_Cccamgenerador" : 1,
