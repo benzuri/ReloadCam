@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 
 #Refrescador automatico de clines
-#Creado por Dagger
 
 import ReloadCam_Main, ReloadCam_Helper
 
