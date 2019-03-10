@@ -29,4 +29,4 @@ class Freeccamserver(ReloadCam_Main.Server):
         cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)
         if cline != None and ReloadCam_Helper.TestCline(cline):
             return cline
-return None
+        return None
