@@ -13,7 +13,7 @@ class Freecccam(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNjX0dTEx5Kfppm1t7Lkk8_ezpOXpJiZcqiy5pea38nU')
+        realUrl = ReloadCam_Helper.Decrypt('maanpLZ7fKHK5NLEx5KfYZeyrnzX3dLhxslgmZiocbG14g==')
         return realUrl
 
     def GetClines(self):
