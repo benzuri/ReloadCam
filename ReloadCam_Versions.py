@@ -21,5 +21,7 @@ Versions = {
     "ReloadCam_Server_Cccamlux" : 1,
     "ReloadCam_Server_Freeccamserver" : 1,
     "ReloadCam_Server_Freecccam" : 1,
+    "ReloadCam_Server_Cccamious" : 1,
+    "ReloadCam_Server_Cccambird" : 1,
     "ReloadCam_Server_Testious" : 1,
 }
