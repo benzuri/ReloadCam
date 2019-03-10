@@ -5,12 +5,10 @@
 #Creado por Dagger
 
 def GetVersion():
-    return 5
+    return 6
 
 Arguments = [
-    'Mycccam',
     'Cccamfree',
-    'Cccamfree2',
     'Cccamgenerador',
     'Cccamgenerator',
     'Cccam4you',
