@@ -18,6 +18,8 @@ Arguments = [
     'Cccamlux',
     'Freeccamserver',
     'Freecccam',
+    'Cccamious',
+    'Cccambird',
     'Testious',
     'ALL', #ALL Servers, except testious
     'ALLT', #ALL Servers with testious
