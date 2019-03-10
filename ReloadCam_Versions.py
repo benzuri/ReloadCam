@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 
 #Refrescador automatico de clines
-#Creado por Dagger
 
 Versions = {
     "ReloadCamUndro" : 1,
@@ -14,7 +13,12 @@ Versions = {
     "ReloadCam_Server_Cccamfree" : 1,
     "ReloadCam_Server_Cccamgenerador" : 1,
     "ReloadCam_Server_Cccamgenerator" : 2,
+    "ReloadCam_Server_Cccamgenerators" : 1,
     "ReloadCam_Server_Cccam4you" : 2,
     "ReloadCam_Server_Cccamfull" : 2,
+    "ReloadCam_Server_Powerfullcccam" : 1,
+    "ReloadCam_Server_Cccamgate" : 1,
+    "ReloadCam_Server_Cccamlux" : 1,
+    "ReloadCam_Server_Freeccamserver" : 1,
     "ReloadCam_Server_Testious" : 1,
 }
