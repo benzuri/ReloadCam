@@ -6,7 +6,7 @@
 import ReloadCam_Main, ReloadCam_Helper
 
 def GetVersion():
-    return 2
+    return 1
 
 #Filename must start with Server, classname and argument must be the same!
 class Cccamgenerators(ReloadCam_Main.Server):
