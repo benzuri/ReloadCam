@@ -11,8 +11,13 @@ Arguments = [
     'Cccamfree',
     'Cccamgenerador',
     'Cccamgenerator',
+    'Cccamgenerators',
     'Cccam4you',
     'Cccamfull',
+    'Powerfullcccam',
+    'Cccamgate',
+    'Cccamlux',
+    'Freeccamserver',
     'Testious',
     'ALL', #ALL Servers, except testious
     'ALLT', #ALL Servers with testious
